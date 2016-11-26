@@ -25,7 +25,7 @@ SECRET_KEY = '7xm$o=^=7gb(z*n#^(c(8jv#0fr#$b3sq7v(1kjzp=gma#s6*_'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['diddis.pythonanywhere.com']
 
 
 # Application definition
