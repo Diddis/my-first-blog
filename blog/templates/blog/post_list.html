@@ -3,16 +3,23 @@
     <head>
         <title>Django Girls blog</title>
     </head>
+    
     <body>
+    
         <div>
             <br />
             <h1>My Django Girls Blog ->->-> In Progress</h1>
+            <br />
         </div>
         
-        <div>
-            <h2>Space here</h2>
-        </div>
+        {% for post in posts %}        
+            <div>
+                <h2><a href="">{{ post.title }}</a></h1>
+                <p>published: {{ post.published_date }}<p>                
+                <p>{{ post.text | linebreaksbr }}</p>
+            </div>
+        {% endfor %}
         
-        <p>It works!</p>
     </body>
+    
 </html>
